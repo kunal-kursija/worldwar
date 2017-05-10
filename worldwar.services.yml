@@ -1,0 +1,9 @@
+services:
+  # WW1 Service.
+  worldwar.one.arms.service:
+    class: Drupal\worldwar\WorldWarOneArmsService
+
+  # WW2 Service.
+  worldwar.two.arms.service:
+    class: Drupal\worldwar\WorldWarTwoArmsService
+    arguments: ['@worldwar.one.arms.service']

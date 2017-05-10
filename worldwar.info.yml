@@ -1,0 +1,5 @@
+name: WorldWar
+description: This module contains information about World War.
+package: War
+type: module
+core: 8.x

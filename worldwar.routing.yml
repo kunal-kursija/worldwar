@@ -1,0 +1,26 @@
+# Route For: World War Status.
+worldwar.status:
+  path: '/worldwar/status'
+  defaults:
+    _controller: '\Drupal\worldwar\Controller\WorldWarStatus::getstatus'
+    _title: 'World War Status'
+  requirements:
+    _permission: 'access worldwar information'
+
+# Route For: World War 1 Arms.
+worldwarone.arms:
+  path: '/worldwarone/arms'
+  defaults:
+    _controller: '\Drupal\worldwar\Controller\WorldWarOneArms::getarms'
+    _title: 'World War One Arms'
+  requirements:
+    _permission: 'access worldwar information'
+
+#Route For: World War 2 Arms.
+worldwartwo.arms:
+  path: '/worldwartwo/arms'
+  defaults:
+    _controller: '\Drupal\worldwar\Controller\WorldWarTwoArms::getarms'
+    _title: 'World War Two Arms'
+  requirements:
+    _permission: 'access worldwar information'
